@@ -1,0 +1,33 @@
+<div class="manga-list" id="manga-list-id">
+  <ul *ngIf="mangas.length else loading">
+    <li
+      class="manga-item-row animate-zoom"
+      *ngFor="let manga of mangas; let i= index"
+      id='manga-item-row-{{i}}-id'
+      (click)='goToMangaReader(manga, "manga-item-row-" + i + "-id")'
+    >
+    <div class="wrapper" >
+        <ngui-in-view class="manga-row-image">
+            <img *ngIf   appImagePlaceholder placeholder="{{imgPlaceholder}}" [src]="BASED_PATH + manga.imagePath"  />
+        </ngui-in-view>
+        <div class="manga-row-info">
+            <h2>{{ manga.title }}</h2>
+            <p><strong>Source: </strong> {{ manga.source }}</p>
+            <p><strong>Multi chapters: </strong> {{manga.type}}</p>
+        </div>
+    </div>
+      
+    </li>
+  </ul>
+ 
+  <div (click)="nextPage()">
+    <button id="btn-next-id" class="btn-next btn-load">Next</button>
+  </div>
+
+</div>
+
+<ng-template #loading>
+  <div class="center">
+      <div class="loader" ></div>
+  </div>
+</ng-template>

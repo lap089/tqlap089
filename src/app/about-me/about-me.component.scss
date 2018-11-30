@@ -1,0 +1,27 @@
+// Gird
+.wrapper {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+
+.menu-profile {
+  grid-column: span 3;
+  position: sticky;
+}
+
+.profile-detail {
+  grid-column: span 9;
+}
+
+
+.wrapper div{
+    font-size: medium;
+}
+
+
+label {
+    font-size: large;
+    font-weight: 800
+}

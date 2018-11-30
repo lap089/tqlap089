@@ -1,0 +1,17 @@
+<div class="manga-reader">
+
+<h2 id='manga-title-id'>{{title}}</h2>
+<div class="page-list">
+    <ul>
+      <li class="page-item-row" *ngFor="let mangaPage of mangaPages; let i= index"
+      id='page-{{i}}-id'
+      >
+          <ngui-in-view>
+              <img *ngIf appImagePlaceholder placeholder="{{imgPlaceholder}}" src="{{BASED_PATH + mangaPage}}" />
+          </ngui-in-view>
+          <div class="page-num"><strong>{{i+1}}/{{mangaPages.length}}</strong></div>
+      </li>
+    </ul>
+</div>
+
+</div>

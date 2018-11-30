@@ -1,0 +1,47 @@
+
+.page-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.page-list ul li{
+    padding: 0;
+}
+
+.page-item-row img {
+    width: 40%;
+    margin-bottom: 1px;
+}
+
+.manga-reader {
+    text-align: center;
+}
+
+
+.page-item-row ngui-in-view {
+    min-height: 400px;
+}
+
+
+.page-item-row div {
+    display: inline;
+}
+
+
+
+
+@media(max-width: 790px){
+
+    
+  
+.page-item-row img {
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.page-item-row ngui-in-view {
+    min-height: 200px;
+}
+        
+}

@@ -1,0 +1,16 @@
+<div class="chapter-list">
+<h2>{{data.title}}</h2>
+<div mat-dialog-content class="chapter-list-row">
+  <h3>Chapter List:</h3>
+  <ul>
+    <li *ngFor="let chapter of data.chapters" (click)="goToMangaReader(chapter)" >
+      {{chapter.title}}
+    </li>
+  </ul>
+</div>
+<!-- <div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+</div> -->
+
+</div>
