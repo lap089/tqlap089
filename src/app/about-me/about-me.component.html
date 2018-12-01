@@ -1,17 +1,30 @@
+<h1>My Profile</h1>
+
 <section class="wrapper">
   <div class="menu-profile">
     <ul>
-      <li>About</li>
-      <li>Education</li>
-      <li>Interest</li>
-      <li>Publication</li>
-      <li>History</li>
-      <li>Project</li>
+      <li (click)="goToSection('about-id')">ABOUT ME</li>
+      <li (click)="goToSection('education-id')">EDUCATION</li>
+      <li (click)="goToSection('interest-id')">INTEREST</li>
+      <li (click)="goToSection('publication-id')">PUBLICATION</li>
+      <li (click)="goToSection('history-id')">HISTORY</li>
+      <li (click)="goToSection('project-id')">PROJECT</li>
     </ul>
   </div>
   <div class="profile-detail">
+    <div id="about-id">
+      <label>ABOUT ME</label>
+      <p>
+        I'm Quoc Lap Trieu, I'm from Vietnam. At the moment, I live in Sydney,
+        Australia to pursure my Master degree in ICT. I love programming and
+        developing intesting projects, I also love challenges from solving
+        problems during implementation and I believe that only practises and
+        challenges could help me advance further.
+      </p>
+    </div>
+
     <div id="education-id">
-      <label>Education</label>
+      <label>EDUCATION</label>
       <p>
         From 2013 to 2017, I have finished my Bachelor of Computer Science
         degree with GPA of 3.78/4 at the University of Science in Vietnam.
@@ -22,7 +35,7 @@
     </div>
 
     <div id="history-id">
-      <label>History</label>
+      <label>HISTORY</label>
       <ul>
         <li>
           Starting from May of 2016 to September of 2017, I started to work as a
@@ -65,17 +78,17 @@
     </div>
 
     <div id="award-id">
-      <label>Award</label>
+      <label>AWARD</label>
       <p>
-        - In March 2018, I received the scholarship of Vice-Chancellor’s
-        Academic Excellence Postgraduate for my master course at the Western
-        Sydney University. The scholarship covers fifty percent of my tuition
-        fee in the university during the period of two years.
+        In March 2018, I received the scholarship of Vice-Chancellor’s Academic
+        Excellence Postgraduate for my master course at the Western Sydney
+        University. The scholarship covers fifty percent of my tuition fee in
+        the university during the period of two years.
       </p>
     </div>
 
     <div id="interest-id">
-      <label>Interest</label>
+      <label>INTEREST</label>
       <ul>
         <li>
           Reading Book: Whenever I have leisure time, I usually spend my time
@@ -107,7 +120,7 @@
     </div>
 
     <div id="publication-id">
-      <label>Publication</label>
+      <label>PUBLICATION</label>
       <ul>
         <li>
           My first paper,
@@ -134,17 +147,77 @@
       </ul>
     </div>
 
-
     <div id="project-id">
-        <label>Project</label>
-        <ul>
-          <li>
-
-          </li>
-          <li>
-
-          </li>
-        </ul>
-      </div>
+      <label>PROJECT</label>
+      <ul>
+        <li>
+          <a href="https://github.com/lap089/RobotCar">RobotCar</a>
+          <p class="description">
+            A wireless car with equipped camera, using Arduino for motor
+            controller and OpenWrt framework on wireless router TP-Link
+            TL-MR3020 for wireless connection and camera streaming.
+          </p>
+          <p class="language">Python, C, Arduino, OpenWrt</p>
+        </li>
+        <li>
+          <a href="http://smartagri.com.vn/\#/home">SmartAgri</a>
+          <p class="description">
+            A cloud-based software system that helps manage high-tech
+            agricultural production from the very first stage of planning all
+            the way to harvest. Users can monitor the status of production,
+            adjust environment, control production devices thanks to the
+            functionality of remote real-time data collection. SmartAgri is
+            flexible and can be customized to make sure to meet specific
+            requirements of every customer.
+          </p>
+          <p class="language">Java Spring, AngularJs</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-xTL8hzsq1c"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </li>
+        <li>
+          <a href="https://github.com/huyqut/thesis-spider">Antenna</a>
+          <p class="description">
+            The project is developed for my thesis defense. With the collection
+            of more than 420,000 articles crawling from different channels in
+            Twitter for training the Word Embedding model (Doc2Vec), we create
+            the universal encoding model to convert the data into a fixed length
+            vector for semantic processing. The project applies this universal
+            model to create a system for helping user analyze and visualize
+            textual data. <br />
+            Training project: https://github.com/lap089/thesis-nlp
+          </p>
+          <p class="language">Python, Java Spring</p>
+        </li>
+        <li>
+          <a href="https://github.com/lap089/MoodleManager">Moodle Manager</a>
+          <p class="description">
+            The intention of this program is to support my study. I realized
+            that my classmates and I did not regularly access our Moodle page,
+            which caused us to miss our deadlines and/or any new notifications.
+            This creation is based on the Moodle website of my school to notify
+            me of new events or alert me when my deadlines come.
+          </p>
+          <p class="language">Windows Universal</p>
+        </li>
+        <li>
+          <a href="https://github.com/lap089/USurvey">Usurvey</a>
+          <p class="description">
+            An online survey application to help users earn money for
+            cross-platform mobile and web application. The project has two main
+            versions with different purposes. In the first version, it is the
+            cross-platform mobile application that uses React Native framework.
+            Regarding the second one, it is the web application implemented by
+            Angular2 to support companies for creating various types of survey.
+          </p>
+          <p class="language">React Native, AngularJs</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

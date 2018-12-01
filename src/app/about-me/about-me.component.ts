@@ -12,4 +12,9 @@ export class AboutMeComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToSection($id) {
+    console.log($id);
+    document.getElementById($id).scrollIntoView(true);
+  }
+
 }

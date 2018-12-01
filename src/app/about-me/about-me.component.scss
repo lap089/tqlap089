@@ -3,25 +3,95 @@
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: 
+    "mn mn . pf pf pf pf pf  pf  pf  pf  pf"
+    ". . . pf pf pf pf pf  pf  pf  pf  pf"
+    ;
 }
 
 .menu-profile {
-  grid-column: span 3;
-  position: sticky;
+    grid-area: mn;
+    position: sticky;
+    top: 0;
+}
+
+.menu-profile ul {
+    padding: 0px;
+}
+
+.menu-profile ul li {
+    list-style-type: none;
+    padding: 15px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.menu-profile ul li:hover {
+    font-weight: bolder;
+    color: red;
+    border-radius: 5px;
+    background-color: cornflowerblue;
 }
 
 .profile-detail {
-  grid-column: span 9;
+    grid-area: pf;
+    padding: 25px;
 }
 
-
-.wrapper div{
+.profile-detail div{
     font-size: medium;
+    margin-bottom: 100px;
 }
 
+.profile-detail ul li {
+    margin-bottom: 20px;
+    list-style-type: circle;
+}
 
 label {
     font-size: large;
-    font-weight: 800
+    font-weight: 800;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+
+// Projects
+
+#project-id ul li {
+    margin-bottom: 40px;
+}
+
+.description, .language {
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.description::before {
+    content: "Description: ";
+    font-weight: bold;
+}
+
+.language::before {
+    content: "Language: ";
+    font-weight: bold;
+}
+
+#project-id a{
+    color: crimson;
+    font-weight: bolder;
+    font-size: large;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+#project-id a:hover {
+   opacity: 1;
 }
