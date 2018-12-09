@@ -21,7 +21,6 @@ export class MangaComponent implements OnInit {
 
   constructor(private  apiService:  MangaServiceService,
               private router: Router,
-              private route: ActivatedRoute,
               private utilHelper: UtilHelper,
               public dialog: MatDialog) {
       console.log('MangaComponent', 'Constructor');

@@ -14,24 +14,83 @@
   <div class="profile-detail">
     <div id="about-id">
       <label>ABOUT ME</label>
-      <p>
-        I'm Quoc Lap Trieu, I'm from Vietnam. At the moment, I live in Sydney,
-        Australia to pursure my Master degree in ICT. I love programming and
-        developing intesting projects, I also love challenges from solving
-        problems during implementation and I believe that only practises and
-        challenges could help me advance further.
-      </p>
+      
+      <div class="about-wrapper">
+        <ul class="about-contact">
+          <li>
+            <fa size="lg" name="envelope"></fa>
+            <a class="link" href="mailto:tqlap@outlook.com">
+              tqlap@outlook.com</a
+            >
+          </li>
+          <li><fa size="lg" name="mobile"></fa> +(61) 450 864 670</li>
+          <li>
+            <fa size="lg" name="linkedin"></fa
+            ><a
+              class="link"
+              href="https://www.linkedin.com/in/lap-trieu-730949118/"
+            >
+              lap-trieu</a
+            >
+          </li>
+          <li>
+            <fa size="lg" name="github"></fa
+            ><a class="link" href="https://www.github.com/lap089"> lap089</a>
+          </li>
+          
+        </ul>
+        <img class="about-intro" src="/assets/myAvatar.png">        
+        
+      </div>
+      <p >
+          I'm Quoc Lap Trieu, I'm from Vietnam. At the moment, I live in Sydney,
+          Australia to pursure my Master degree in ICT. As a developer, I enjoy
+          working on various kind of projects to assist my life. As a student,
+          my hunger for knowledge and determination helps me on the way of
+          learning and improving myself. I believe that only practises and
+          challenges could help me advance further.
+          
+        </p>
+
     </div>
 
     <div id="education-id">
       <label>EDUCATION</label>
-      <p>
-        From 2013 to 2017, I have finished my Bachelor of Computer Science
-        degree with GPA of 3.78/4 at the University of Science in Vietnam.
-        Starting in the year of 2018, I’m studying Master of Information and
-        Communications Technology (Advanced) at the University of Western Sydney
-        for a period of 2 years.
-      </p>
+      <ul>
+        <li>
+          <p>
+            From 2013 to 2017, I have finished my undergraduate degree in
+            Computer Science at the University of Science in Vietnam.
+          </p>
+          <p
+            class="hover-effect"
+            (click)="
+              viewPdf(
+                'Course-Result/Undergraduate-result.pdf'
+              )
+            "
+          >
+            GPA: 3.78/4 (View result)
+          </p>
+        </li>
+        <li>
+          <p>
+            Starting in the year of 2018, I’m studying Master of Information and
+            Communications Technology (Advanced) at the University of Western
+            Sydney for a period of 2 years.
+          </p>
+          <p
+            class="hover-effect"
+            (click)="
+              viewPdf(
+                'Course-Result/Postgraduate-result.pdf'
+              )
+            "
+          >
+            View result
+          </p>
+        </li>
+      </ul>
     </div>
 
     <div id="history-id">
@@ -80,10 +139,11 @@
     <div id="award-id">
       <label>AWARD</label>
       <p>
-        In March 2018, I received the scholarship of Vice-Chancellor’s Academic
-        Excellence Postgraduate for my master course at the Western Sydney
-        University. The scholarship covers fifty percent of my tuition fee in
-        the university during the period of two years.
+        In March 2018, I received the scholarship of
+        <b>Vice-Chancellor’s Academic Excellence Postgraduate</b> for my master
+        course at the Western Sydney University. The scholarship covers fifty
+        percent of my tuition fee in the university during the period of two
+        years.
       </p>
     </div>
 
@@ -123,26 +183,46 @@
       <label>PUBLICATION</label>
       <ul>
         <li>
-          My first paper,
+          Trieu, L. Q., Tran, H. Q., and Tran, M.-T. (2017a).
           <b
-            >“News classification from social media using twitter-based doc2vec
-            model and automatic query expansion”</b
-          >
-          in proceedings of SoICT, published in 2017 during the final year of my
-          undergraduate. The paper is about proposing a new method for
-          classifying the content of news into different topics based on doc2vec
-          model and query expansion technique that I learned in my thesis.
+            class="hover-effect"
+            (click)="
+              viewPdf(
+                'Paper/news-classification-social.pdf'
+              )
+            "
+            >News classification from social media using twitter-based doc2vec
+            model and automatic query expansion</b
+          >. In Proceedings of the Eighth International Symposium on Information
+          and Communication Technology, SoICT 2017, pages 460-467, New York, NY,
+          USA. ACM
+
+          <p>
+            The paper is about proposing a new method for classifying the
+            content of news into different topics based on doc2vec model and
+            query expansion technique that I learned in my thesis.
+          </p>
+
+          <p>Download Data Model</p>
         </li>
         <li>
+          Trieu, L. Q., Tran, T., Tran, M., and Tran, M. (2017b).
           <b
-            >“Document Sensitivity Classification for Data Leakage Prevention
-            with Twitter-based Document Embedding and Query Expansion”</b
-          >
-          is my second paper, which was also published at the end of 2017 in
-          proceedings of CIS. The paper focuses on developing a new solution for
-          classifying sensitive documents. The sole purpose is to protect
-          private documents from other parties by classifying and filtering them
-          using document embedding technique.
+            class="hover-effect"
+            (click)="
+              viewPdf('Paper/cis17-final-document-2.pdf')
+            "
+            >Document sensitivity classification for data leakage prevention
+            with Twitter-based document embedding and query expansion</b
+          >. In 2017, 13th International Conference on Computational
+          Intelligence and Security (CIS), pages 537-542
+
+          <p>
+            The paper focuses on developing a new solution for classifying
+            sensitive documents. The sole purpose is to protect private
+            documents from other parties by classifying and filtering them using
+            document embedding technique.
+          </p>
         </li>
       </ul>
     </div>
@@ -160,7 +240,7 @@
           <p class="language">Python, C, Arduino, OpenWrt</p>
         </li>
         <li>
-          <a href="http://smartagri.com.vn/\#/home">SmartAgri</a>
+          <a href="http://smartagri.com.vn//#/home">SmartAgri</a>
           <p class="description">
             A cloud-based software system that helps manage high-tech
             agricultural production from the very first stage of planning all
@@ -203,7 +283,7 @@
             This creation is based on the Moodle website of my school to notify
             me of new events or alert me when my deadlines come.
           </p>
-          <p class="language">Windows Universal</p>
+          <p class="language">C#, Universal Windows Platform</p>
         </li>
         <li>
           <a href="https://github.com/lap089/USurvey">Usurvey</a>
@@ -216,6 +296,13 @@
             Angular2 to support companies for creating various types of survey.
           </p>
           <p class="language">React Native, AngularJs</p>
+        </li>
+        <li>
+          <a href="https://github.com/lap089/EVENeT">EVENeT</a>
+          <p class="description">
+            A social network application for event management.
+          </p>
+          <p class="language">C#, Universal Windows Platform</p>
         </li>
       </ul>
     </div>

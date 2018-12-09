@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImagePlaceholderDirective } from './shared/image-placeholder.directive';
 import { NguiInViewComponent } from './ngui-in-view/ngui-in-view.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ChaptersDialogComponent,
     ImagePlaceholderDirective,
     NguiInViewComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ArticleDetailComponent
   ],
   entryComponents: [
     ChaptersDialogComponent
@@ -33,7 +37,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AppRoutingModule,
     HttpClientModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PdfViewerModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

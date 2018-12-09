@@ -1,0 +1,20 @@
+.report-pdf-list li {
+  list-style-type: circle;
+  cursor: pointer;
+}
+
+.report-pdf-list li:hover {
+  background-color: navajowhite;
+  border-radius: 10px;
+  
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.inline-list li{
+  list-style-type: none;
+  display: inline;
+}

@@ -1,3 +1,16 @@
-<p>
-  home works!
-</p>
+<div class="container">
+  <ul class="report-pdf-list">
+    <h2>List of Articles</h2>
+    <li *ngFor="let article of articles; let i = index" (click)="viewArticle(article.pathName)">
+      <h3>{{ article.title }}</h3>
+      <fa size="lg" name="folder"></fa> <i>{{article.pathName}}</i>
+      <ul class="inline-list">
+        <fa size="lg" name="tags"></fa>
+        <li *ngFor="let tag of article.tags; let tagIndex = index">
+          {{tag.name}}
+          <span *ngIf="(tagIndex+1) !== article.tags.length">,</span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
