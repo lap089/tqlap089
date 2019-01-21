@@ -13,7 +13,7 @@ export class AboutMeComponent implements OnInit {
 
   goToSection($id) {
     console.log($id);
-    document.getElementById($id).scrollIntoView(true);
+    document.getElementById($id).scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
 
   viewPdf($path) {

@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 export class UtilHelper {
 
   // BASE URL
-  // BASED_URL = 'http://qltrieu.com:8880/api';
-   BASED_URL = 'http://localhost:8880/api';
+   BASED_URL = 'http://qltrieu.com:8880/api';
+  // BASED_URL = 'http://localhost:8880/api';
 
   // BASED URI PDF
   BASED_URI_PDF = '../../assets/Reports/';

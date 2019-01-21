@@ -1,10 +1,9 @@
-<h1>My Profile</h1>
-
 <section class="wrapper">
   <div class="menu-profile">
     <ul>
       <li (click)="goToSection('about-id')">ABOUT ME</li>
       <li (click)="goToSection('education-id')">EDUCATION</li>
+      <li (click)="goToSection('award-id')">AWARD</li>
       <li (click)="goToSection('interest-id')">INTEREST</li>
       <li (click)="goToSection('publication-id')">PUBLICATION</li>
       <li (click)="goToSection('history-id')">HISTORY</li>
@@ -12,9 +11,11 @@
     </ul>
   </div>
   <div class="profile-detail">
+    <img class="my-avatar" src="/assets/myAvatar.png" />
+
     <div id="about-id">
-      <label>ABOUT ME</label>
-      
+      <hr class="hr-text" data-content="ABOUT ME" />
+
       <div class="about-wrapper">
         <ul class="about-contact">
           <li>
@@ -37,25 +38,28 @@
             <fa size="lg" name="github"></fa
             ><a class="link" href="https://www.github.com/lap089"> lap089</a>
           </li>
-          
         </ul>
-        <img class="about-intro" src="/assets/myAvatar.png">        
-        
-      </div>
-      <p >
-          I'm Quoc Lap Trieu, I'm from Vietnam. At the moment, I live in Sydney,
-          Australia to pursure my Master degree in ICT. As a developer, I enjoy
-          working on various kind of projects to assist my life. As a student,
-          my hunger for knowledge and determination helps me on the way of
-          learning and improving myself. I believe that only practises and
-          challenges could help me advance further.
-          
+        <p class="about-intro">
+          I am a computer scientist with experience working in the area of
+          natural language processing and developing interesting projects. At
+          the moment, I live in Sydney, Australia to pursue my Master degree in
+          ICT. As a developer, I enjoy working on various kind of projects to
+          assist my life. As a student, my hunger for knowledge and
+          determination helps me on the way of learning and improving myself. I
+          believe that only practises and challenges could help me advance
+          further.
         </p>
-
+      </div>
+      <p
+        class="hover-effect content-center border"
+        (click)="viewPdf('CV/QuocLapTRIEU_Resume_It.pdf')"
+      >
+        <fa size="lg" name="file"></fa> View my CV
+      </p>
     </div>
 
     <div id="education-id">
-      <label>EDUCATION</label>
+      <hr class="hr-text" data-content="EDUCATION" />
       <ul>
         <li>
           <p>
@@ -64,13 +68,9 @@
           </p>
           <p
             class="hover-effect"
-            (click)="
-              viewPdf(
-                'Course-Result/Undergraduate-result.pdf'
-              )
-            "
+            (click)="viewPdf('Course-Result/Undergraduate-result.pdf')"
           >
-            GPA: 3.78/4 (View result)
+            <fa size="lg" name="file"></fa> GPA: 3.78/4
           </p>
         </li>
         <li>
@@ -81,25 +81,116 @@
           </p>
           <p
             class="hover-effect"
-            (click)="
-              viewPdf(
-                'Course-Result/Postgraduate-result.pdf'
-              )
-            "
+            (click)="viewPdf('Course-Result/Postgraduate-result.pdf')"
           >
-            View result
+            <fa size="lg" name="file"></fa> View result
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div id="award-id">
+      <hr class="hr-text" data-content="AWARD" />
+      <p>
+        In March 2018, I received the scholarship of
+        <b>Vice-Chancellor’s Academic Excellence Postgraduate</b> for my master
+        course at the Western Sydney University. The scholarship covers fifty
+        percent of my tuition fee in the university during the period of two
+        years.
+      </p>
+    </div>
+
+    <div id="interest-id">
+      <hr class="hr-text" data-content="INTEREST" />
+      <ul>
+        <li>
+          Reading Book: Whenever I have leisure time, I usually spend my time
+          reading my favourite books. The books are usually about
+          self-improvement since it helps readers live a successful life by
+          guiding them the way to achieve their ambition. Sometimes, I also read
+          light novels as a way to help me entertain after being under the
+          pressure of studying. My favourite book of all the time is “How to Win
+          Friends and Influence People” of the famous author, Dale Carnegie. The
+          book focuses on teaching me the skills as well as the primary
+          principles of communication in order to be able to influence the
+          others.
+        </li>
+        <li>
+          Listening to music: I also choose to listen to music as an effective
+          method of not only relaxing my mind but focusing on my tasks as well.
+        </li>
+        <li>
+          Self-learning: Whenever I feel bored or do not know what to do, I
+          often spend my time finding new objectives to learn. Sometimes, I
+          learn how an application is implemented by decompiling the source code
+          of the software and read its structure. I also modify the
+          functionalities of the application so that it could fit my purpose. I
+          choose the method of finding an objective and then implementing an
+          application to accomplish it as a way to for me to practice and learn
+          new knowledge.
+        </li>
+      </ul>
+    </div>
+
+    <div id="publication-id">
+      <hr class="hr-text" data-content="PUBLICATION" />
+      <ul>
+        <li>
+          Trieu, L. Q., Tran, H. Q., and Tran, M.-T. (2017a).
+          <b
+            class="hover-effect"
+            (click)="viewPdf('Paper/news-classification-social.pdf')"
+            >News classification from social media using twitter-based doc2vec
+            model and automatic query expansion</b
+          >. In Proceedings of the Eighth International Symposium on Information
+          and Communication Technology, SoICT 2017, pages 460-467, New York, NY,
+          USA. ACM
+
+          <p>
+            The paper is about proposing a new method for classifying the
+            content of news into different topics based on doc2vec model and
+            query expansion technique that I learned in my thesis.
+          </p>
+          <a
+            class="link inline"
+            href="https://mega.nz/#F!vYo1lIZJ!73lQ__enmpxkmlj65BxTtQ"
+          >
+            <fa size="lg" name="cloud-download"></fa> Data Model</a
+          >
+          <a
+            class="link inline"
+            href="https://mega.nz/#F!vRpHGKJR!-DyY043cjwNPYJap0_7_oQ"
+          >
+            <fa size="lg" name="cloud-download"></fa> Training Database</a
+          >
+        </li>
+        <li>
+          Trieu, L. Q., Tran, T., Tran, M., and Tran, M. (2017b).
+          <b
+            class="hover-effect"
+            (click)="viewPdf('Paper/cis17-final-document-2.pdf')"
+            >Document sensitivity classification for data leakage prevention
+            with Twitter-based document embedding and query expansion</b
+          >. In 2017, 13th International Conference on Computational
+          Intelligence and Security (CIS), pages 537-542
+
+          <p>
+            The paper focuses on developing a new solution for classifying
+            sensitive documents. The sole purpose is to protect private
+            documents from other parties by classifying and filtering them using
+            document embedding technique.
           </p>
         </li>
       </ul>
     </div>
 
     <div id="history-id">
-      <label>HISTORY</label>
+      <hr class="hr-text" data-content="HISTORY" />
       <ul>
         <li>
           Starting from May of 2016 to September of 2017, I started to work as a
           part-time developer for SmartApp during the final year of my
-          undergraduate. It is a start-up company that develops its own software
+          undergraduate. It is a start-up company that develops its software
           products and provides IT solutions for clients as well. The USurvey
           project has been implemented with the server and web application for
           nearly a year. The project is to help users earn money by doing
@@ -125,9 +216,9 @@
           in 2000, and since 2014, the company has been under the management of
           Hitachi Consulting Corporation in Japan (CyberSoft, 2014). At first, I
           was assigned as a back-end Java developer for the SmartAgri project.
-          My task was to implement functions as well as its Unit test in server
-          Spring Framework to provide Application Program Interface (API) for
-          the clients which are the web and mobile application. During the
+          My task was to implement functions as well as its Unit test in the
+          server Spring Framework to provide Application Program Interface (API)
+          for the clients which are the web and mobile application. During the
           process of project development, I was also assigned as a front-end
           developer to implement the web application for the project. My task
           was to focus on fixing bugs in the web and integrating new APIs in a
@@ -136,99 +227,8 @@
       </ul>
     </div>
 
-    <div id="award-id">
-      <label>AWARD</label>
-      <p>
-        In March 2018, I received the scholarship of
-        <b>Vice-Chancellor’s Academic Excellence Postgraduate</b> for my master
-        course at the Western Sydney University. The scholarship covers fifty
-        percent of my tuition fee in the university during the period of two
-        years.
-      </p>
-    </div>
-
-    <div id="interest-id">
-      <label>INTEREST</label>
-      <ul>
-        <li>
-          Reading Book: Whenever I have leisure time, I usually spend my time
-          reading my favorite books. The books are usually about
-          self-improvement since it helps readers live a successful life by
-          guiding them the way to achieve their ambition. Sometimes, I also read
-          light novels as a way to help me entertain after being under the
-          pressure of studying. My favorite book of all the time is “How to Win
-          Friends and Influence People” of the famous author, Dale Carnegie. The
-          book focuses on teaching me the skills as well as the primary
-          principles of communication in order to be able to influence the
-          others.
-        </li>
-        <li>
-          Listening to music: I also choose to listen to music as an effective
-          method of not only relaxing my mind but focusing on my tasks as well.
-        </li>
-        <li>
-          Self-learning: Whenever I feel bored or do not know what to do, I
-          often spend my time on finding new objectives to learn. Sometimes, I
-          learn how an application is implemented by decompiling the source code
-          of the software and read its structure. I also modify the
-          functionalities of the application so that it could fit my purpose. I
-          choose the method of finding an objective and then implementing an
-          application to accomplish it as a way to for me to practice and learn
-          new knowledge.
-        </li>
-      </ul>
-    </div>
-
-    <div id="publication-id">
-      <label>PUBLICATION</label>
-      <ul>
-        <li>
-          Trieu, L. Q., Tran, H. Q., and Tran, M.-T. (2017a).
-          <b
-            class="hover-effect"
-            (click)="
-              viewPdf(
-                'Paper/news-classification-social.pdf'
-              )
-            "
-            >News classification from social media using twitter-based doc2vec
-            model and automatic query expansion</b
-          >. In Proceedings of the Eighth International Symposium on Information
-          and Communication Technology, SoICT 2017, pages 460-467, New York, NY,
-          USA. ACM
-
-          <p>
-            The paper is about proposing a new method for classifying the
-            content of news into different topics based on doc2vec model and
-            query expansion technique that I learned in my thesis.
-          </p>
-
-          <p>Download Data Model</p>
-        </li>
-        <li>
-          Trieu, L. Q., Tran, T., Tran, M., and Tran, M. (2017b).
-          <b
-            class="hover-effect"
-            (click)="
-              viewPdf('Paper/cis17-final-document-2.pdf')
-            "
-            >Document sensitivity classification for data leakage prevention
-            with Twitter-based document embedding and query expansion</b
-          >. In 2017, 13th International Conference on Computational
-          Intelligence and Security (CIS), pages 537-542
-
-          <p>
-            The paper focuses on developing a new solution for classifying
-            sensitive documents. The sole purpose is to protect private
-            documents from other parties by classifying and filtering them using
-            document embedding technique.
-          </p>
-        </li>
-      </ul>
-    </div>
-
     <div id="project-id">
-      <label>PROJECT</label>
+      <hr class="hr-text" data-content="PROJECT" />
       <ul>
         <li>
           <a href="https://github.com/lap089/RobotCar">RobotCar</a>
@@ -243,17 +243,15 @@
           <a href="http://smartagri.com.vn//#/home">SmartAgri</a>
           <p class="description">
             A cloud-based software system that helps manage high-tech
-            agricultural production from the very first stage of planning all
+            Agricultural production from the very first stage of planning all
             the way to harvest. Users can monitor the status of production,
             adjust environment, control production devices thanks to the
             functionality of remote real-time data collection. SmartAgri is
-            flexible and can be customized to make sure to meet specific
+            flexible and can be customised to make sure to meet specific
             requirements of every customer.
           </p>
           <p class="language">Java Spring, AngularJs</p>
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/-xTL8hzsq1c"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -263,12 +261,12 @@
         <li>
           <a href="https://github.com/huyqut/thesis-spider">Antenna</a>
           <p class="description">
-            The project is developed for my thesis defense. With the collection
+            The project is developed for my thesis defence. With the collection
             of more than 420,000 articles crawling from different channels in
             Twitter for training the Word Embedding model (Doc2Vec), we create
             the universal encoding model to convert the data into a fixed length
             vector for semantic processing. The project applies this universal
-            model to create a system for helping user analyze and visualize
+            model to create a system for helping user analyse and visualise
             textual data. <br />
             Training project: https://github.com/lap089/thesis-nlp
           </p>
@@ -277,11 +275,11 @@
         <li>
           <a href="https://github.com/lap089/MoodleManager">Moodle Manager</a>
           <p class="description">
-            The intention of this program is to support my study. I realized
-            that my classmates and I did not regularly access our Moodle page,
-            which caused us to miss our deadlines and/or any new notifications.
-            This creation is based on the Moodle website of my school to notify
-            me of new events or alert me when my deadlines come.
+            This program intends to support my study. I realised that my
+            classmates and I did not regularly access our Moodle page, which
+            caused us to miss our deadlines or any new notifications. This
+            creation is based on the Moodle website of my school to notify me of
+            new events or alert me when my deadlines come.
           </p>
           <p class="language">C#, Universal Windows Platform</p>
         </li>

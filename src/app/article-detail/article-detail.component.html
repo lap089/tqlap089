@@ -1,5 +1,16 @@
-
 <div class="container">
-    <pdf-viewer [autoresize]="true" [original-size]="false" [src]="uri"> </pdf-viewer>
+  <div *ngIf="isLoading" class="center">
+    <div class="loader"></div>
+    <h3 *ngIf="pdfLoaded !== 0">{{ percent }}%</h3>
+  </div>
+  <div [hidden]="!isShowing">
+      <pdf-viewer
+      class="animate-zoom"
+      (on-progress)="onProgress($event)"
+      [autoresize]="true"
+      [original-size]="false"
+      [src]="uri"
+    ></pdf-viewer>
+  </div>
+  
 </div>
-

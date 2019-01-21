@@ -74,6 +74,12 @@ INSERT INTO `manga-drive`.`tag`
 INSERT INTO `manga-drive`.`tag`
 (`id`, `name`) VALUES
 (5, 'MICT');
+INSERT INTO `manga-drive`.`tag`
+(`id`, `name`) VALUES
+(6, 'CS');
+INSERT INTO `manga-drive`.`tag`
+(`id`, `name`) VALUES
+(7, 'computer vision');
 
 
 
@@ -180,3 +186,15 @@ INSERT INTO `manga-drive`.`pdf`
 INSERT INTO `manga-drive`.`pdf-tag`
 (`article`, `tag_id`) VALUES
 (11, 5);
+
+
+INSERT INTO `manga-drive`.`pdf`
+(`title`, `path_name`, `description`) VALUES
+('Reflection Essay 2',
+ 'Computer-Vision/proposal_template.pdf', '');
+INSERT INTO `manga-drive`.`pdf-tag`
+(`article`, `tag_id`) VALUES
+(12, 6);
+INSERT INTO `manga-drive`.`pdf-tag`
+(`article`, `tag_id`) VALUES
+(12, 7);

@@ -42,9 +42,16 @@ nav ul {
 
 
 .header {
-    background: rgba(27, 27, 27, 0.4);
+     background: linear-gradient(to right, transparent, #141414, transparent);
     color: white;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: rgba(90, 88, 87, 0.4) 3px solid; 
+     border-bottom: rgba(0, 0, 0, 0.4) 3px solid; 
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+.header h1 {
+  margin: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
