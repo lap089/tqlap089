@@ -1,5 +1,5 @@
 <section class="wrapper">
-  <div class="menu-profile">
+  <!-- <div class="menu-profile">
     <ul>
       <li (click)="goToSection('about-id')">ABOUT ME</li>
       <li (click)="goToSection('education-id')">EDUCATION</li>
@@ -9,11 +9,11 @@
       <li (click)="goToSection('history-id')">HISTORY</li>
       <li (click)="goToSection('project-id')">PROJECT</li>
     </ul>
-  </div>
+  </div> -->
   <div class="profile-detail">
-    <img class="my-avatar" src="/assets/myAvatar.png" />
+    <img data-aos="zoom-in" class="my-avatar" src="/assets/myAvatar.png" />
 
-    <div id="about-id">
+    <div data-aos="zoom-in" id="about-id">
       <hr class="hr-text" data-content="ABOUT ME" />
 
       <div class="about-wrapper">
@@ -21,22 +21,17 @@
           <li>
             <fa size="lg" name="envelope"></fa>
             <a class="link" href="mailto:tqlap@outlook.com">
-              tqlap@outlook.com</a
-            >
-          </li>
-          <li><fa size="lg" name="mobile"></fa> +(61) 450 864 670</li>
-          <li>
-            <fa size="lg" name="linkedin"></fa
-            ><a
-              class="link"
-              href="https://www.linkedin.com/in/lap-trieu-730949118/"
-            >
-              lap-trieu</a
-            >
+              tqlap@outlook.com</a>
           </li>
           <li>
-            <fa size="lg" name="github"></fa
-            ><a class="link" href="https://www.github.com/lap089"> lap089</a>
+            <fa size="lg" name="mobile"></fa> +(61) 450 864 670
+          </li>
+          <li>
+            <fa size="lg" name="linkedin"></fa><a class="link" href="https://www.linkedin.com/in/lap-trieu-730949118/">
+              lap-trieu</a>
+          </li>
+          <li>
+            <fa size="lg" name="github"></fa><a class="link" href="https://www.github.com/lap089"> lap089</a>
           </li>
         </ul>
         <p class="about-intro">
@@ -50,15 +45,12 @@
           further.
         </p>
       </div>
-      <p
-        class="hover-effect content-center border"
-        (click)="viewPdf('CV/QuocLapTRIEU_Resume_It.pdf')"
-      >
+      <p class="hover-effect content-center border" (click)="viewPdf('CV/QuocLapTRIEU_Resume_It.pdf')">
         <fa size="lg" name="file"></fa> View my CV
       </p>
     </div>
 
-    <div id="education-id">
+    <div data-aos="zoom-in" id="education-id">
       <hr class="hr-text" data-content="EDUCATION" />
       <ul>
         <li>
@@ -66,10 +58,7 @@
             From 2013 to 2017, I have finished my undergraduate degree in
             Computer Science at the University of Science in Vietnam.
           </p>
-          <p
-            class="hover-effect"
-            (click)="viewPdf('Course-Result/Undergraduate-result.pdf')"
-          >
+          <p class="hover-effect" (click)="viewPdf('Course-Result/Undergraduate-result.pdf')">
             <fa size="lg" name="file"></fa> GPA: 3.78/4
           </p>
         </li>
@@ -79,17 +68,14 @@
             Communications Technology (Advanced) at the University of Western
             Sydney for a period of 2 years.
           </p>
-          <p
-            class="hover-effect"
-            (click)="viewPdf('Course-Result/Postgraduate-result.pdf')"
-          >
+          <p class="hover-effect" (click)="viewPdf('Course-Result/Postgraduate-result.pdf')">
             <fa size="lg" name="file"></fa> View result
           </p>
         </li>
       </ul>
     </div>
 
-    <div id="award-id">
+    <div data-aos="zoom-in" id="award-id">
       <hr class="hr-text" data-content="AWARD" />
       <p>
         In March 2018, I received the scholarship of
@@ -100,7 +86,7 @@
       </p>
     </div>
 
-    <div id="interest-id">
+    <div data-aos="zoom-in" id="interest-id">
       <hr class="hr-text" data-content="INTEREST" />
       <ul>
         <li>
@@ -132,17 +118,14 @@
       </ul>
     </div>
 
-    <div id="publication-id">
+    <div data-aos="zoom-in" id="publication-id">
       <hr class="hr-text" data-content="PUBLICATION" />
       <ul>
         <li>
           Trieu, L. Q., Tran, H. Q., and Tran, M.-T. (2017a).
-          <b
-            class="hover-effect"
-            (click)="viewPdf('Paper/news-classification-social.pdf')"
-            >News classification from social media using twitter-based doc2vec
-            model and automatic query expansion</b
-          >. In Proceedings of the Eighth International Symposium on Information
+          <b class="hover-effect" (click)="viewPdf('Paper/news-classification-social.pdf')">News classification from
+            social media using twitter-based doc2vec
+            model and automatic query expansion</b>. In Proceedings of the Eighth International Symposium on Information
           and Communication Technology, SoICT 2017, pages 460-467, New York, NY,
           USA. ACM
 
@@ -151,27 +134,19 @@
             content of news into different topics based on doc2vec model and
             query expansion technique that I learned in my thesis.
           </p>
-          <a
-            class="link inline"
-            href="https://mega.nz/#F!vYo1lIZJ!73lQ__enmpxkmlj65BxTtQ"
-          >
-            <fa size="lg" name="cloud-download"></fa> Data Model</a
-          >
-          <a
-            class="link inline"
-            href="https://mega.nz/#F!vRpHGKJR!-DyY043cjwNPYJap0_7_oQ"
-          >
-            <fa size="lg" name="cloud-download"></fa> Training Database</a
-          >
+          <a class="link inline" href="https://mega.nz/#F!vYo1lIZJ!73lQ__enmpxkmlj65BxTtQ">
+            <fa size="lg" name="cloud-download"></fa> Data Model
+          </a>
+          <a class="link inline" href="https://mega.nz/#F!vRpHGKJR!-DyY043cjwNPYJap0_7_oQ">
+            <fa size="lg" name="cloud-download"></fa> Training Database
+          </a>
         </li>
         <li>
           Trieu, L. Q., Tran, T., Tran, M., and Tran, M. (2017b).
-          <b
-            class="hover-effect"
-            (click)="viewPdf('Paper/cis17-final-document-2.pdf')"
-            >Document sensitivity classification for data leakage prevention
-            with Twitter-based document embedding and query expansion</b
-          >. In 2017, 13th International Conference on Computational
+          <b class="hover-effect" (click)="viewPdf('Paper/cis17-final-document-2.pdf')">Document sensitivity
+            classification for data leakage prevention
+            with Twitter-based document embedding and query expansion</b>. In 2017, 13th International Conference on
+          Computational
           Intelligence and Security (CIS), pages 537-542
 
           <p>
@@ -184,53 +159,66 @@
       </ul>
     </div>
 
-    <div id="history-id">
+    <div data-aos="zoom-in" id="history-id">
       <hr class="hr-text" data-content="HISTORY" />
       <ul>
-        <li>
-          Starting from May of 2016 to September of 2017, I started to work as a
-          part-time developer for SmartApp during the final year of my
-          undergraduate. It is a start-up company that develops its software
-          products and provides IT solutions for clients as well. The USurvey
-          project has been implemented with the server and web application for
-          nearly a year. The project is to help users earn money by doing
-          surveys provided by the application. When submitting a survey, user
-          will receive the points corresponding to that survey. After obtaining
-          sufficient amount of point, users could be able to exchange money
-          using the points they earn. My task as a front-end developer was to
-          implement the mobile software from scratch based on the existing web
-          application for Android and IOS platform. In order to reduce the time
-          for mobile development, my team chose React Native framework to
-          implement a cross-platform mobile application that supports both
-          Android and IOS version. I worked under the instruction of a senior
-          developer that has plenty of experience on programming. Using that as
-          an advantage, I was able to learn as much as I could by trying to ask
-          him various questions.
+        <li> <b>ICT Practicum - Intern Software Developer</b>
+          <ul>
+            <li><a>Employer:</a> A/Prof. Bahman Javadi - University of Western Sydney</li>
+            <li><a>Time:</a> Mar 2019 - present</li>
+            <li><a>Project:</a> Smart Nutrition Monitoring</li>
+            <li><a>Description:</a> Many researchers have attempted to develop nutrition monitoring system using
+              wearable sensor devices. The main advantage of this approach is removing the burden of self-report.
+              Although there are several studies to adopt these sensors to monitor food intake, most of them have been
+              tested in laboratory conditions for limited number of participants. Moreover, almost all of them are based
+              on a single sensor, which limits the accuracy of data collection and consequently data reliability. The
+              average accuracy for nutrition intake using these sensors is about 90% in the laboratory environments. So,
+              an open challenge is to find a non-invasive solution to monitor nutrition intake in real-life scenarios
+              with a high degree of accuracy, which is the goal of this research project.</li>
+          </ul>
         </li>
-        <li>
-          In June 1st of 2015, as a requirement of graduating my Bachelor of
-          Computer Science degree, I started to work as an intern during the
-          period of 4 months for the company of Global CyberSoft (GCS) in
-          Vietnam. It is an outsourcing company that provides IT solutions for
-          customers around the world. The company was established in California
-          in 2000, and since 2014, the company has been under the management of
-          Hitachi Consulting Corporation in Japan (CyberSoft, 2014). At first, I
-          was assigned as a back-end Java developer for the SmartAgri project.
-          My task was to implement functions as well as its Unit test in the
-          server Spring Framework to provide Application Program Interface (API)
-          for the clients which are the web and mobile application. During the
-          process of project development, I was also assigned as a front-end
-          developer to implement the web application for the project. My task
-          was to focus on fixing bugs in the web and integrating new APIs in a
-          server with the web application.
+        <li> <b>Front-end Developer</b>
+          <ul>
+            <li><a>Employer:</a> Dr. Vu Nguyen - University of Science (Vietnam)</li>
+            <li><a>Time:</a> May of 2016 to September of 2017</li>
+            <li><a>Project:</a> Surbee</li>
+            <li><a>Description:</a> My task as a front-end developer was to
+              implement the Surbee software from scratch based on the existing web
+              application for Android and IOS platform. In order to reduce the time
+              for mobile development, my team chose React Native framework to
+              implement a cross-platform mobile application that supports both
+              Android and IOS version. I worked under the instruction of a senior
+              developer that has plenty of experience on programming. Using that as
+              an advantage, I was able to learn as much as I could by trying to ask
+              him various questions.</li>
+          </ul>
+        </li>
+
+        <li> <b>Intern Software Developer</b>
+          <ul>
+            <li><a>Employer:</a> Global CyberSoft (GCS) - outsourcing company that provides IT solutions for
+              customers around the world. The company was established in California
+              in 2000, and since 2014, the company has been under the management of
+              Hitachi Consulting Corporation in Japan (CyberSoft, 2014).</li>
+            <li><a>Time:</a> 4 months from June 1st of 2015</li>
+            <li><a>Project:</a> SmartAgri</li>
+            <li><a>Description:</a> At first, I was assigned as a back-end Java developer for the SmartAgri project.
+              My task was to implement functions as well as its Unit test in the
+              server Spring Framework to provide Application Program Interface (API)
+              for the clients which are the web and mobile application. During the
+              process of project development, I was also assigned as a front-end
+              developer to implement the web application for the project. My task
+              was to focus on fixing bugs in the web and integrating new APIs in a
+              server with the web application.</li>
+          </ul>
         </li>
       </ul>
     </div>
 
-    <div id="project-id">
+    <div data-aos="zoom-in" id="project-id">
       <hr class="hr-text" data-content="PROJECT" />
       <ul>
-        <li>
+        <li data-aos="slide-up">
           <a href="https://github.com/lap089/RobotCar">RobotCar</a>
           <p class="description">
             A wireless car with equipped camera, using Arduino for motor
@@ -239,8 +227,9 @@
           </p>
           <p class="language">Python, C, Arduino, OpenWrt</p>
         </li>
-        <li>
-          <a href="http://smartagri.com.vn//#/home">SmartAgri</a>
+        <li data-aos="slide-up">
+          <a href="http://www.globalcybersoft.com/en/gcs-solutions/smart-agriculture"><img
+              src="/assets/smartagri.png"></a>
           <p class="description">
             A cloud-based software system that helps manage high-tech
             Agricultural production from the very first stage of planning all
@@ -251,14 +240,10 @@
             requirements of every customer.
           </p>
           <p class="language">Java Spring, AngularJs</p>
-          <iframe
-            src="https://www.youtube.com/embed/-xTL8hzsq1c"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/-xTL8hzsq1c" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
-        <li>
+        <li data-aos="slide-up">
           <a href="https://github.com/huyqut/thesis-spider">Antenna</a>
           <p class="description">
             The project is developed for my thesis defence. With the collection
@@ -272,7 +257,28 @@
           </p>
           <p class="language">Python, Java Spring</p>
         </li>
-        <li>
+        <li data-aos="slide-up">
+          <a href="https://surbee.io/" ><img class="surbee-img" src="/assets/surbee.png"></a>
+          <p class="description">
+            An online survey application to help users earn money for
+            cross-platform mobile and web application. The project has two main
+            versions with different purposes. In the first version, it is the
+            cross-platform mobile application that uses React Native framework.
+            Regarding the second one, it is the web application implemented by
+            Angular2 to support companies for creating various types of survey.
+          </p>
+          <p class="language">React Native, AngularJs</p>
+          <!-- <video class="gp-video-element" width="230px" height="484" style="margin:0 auto;width:230px;height:200px;"
+            autoplay="autoplay" loop="loop" playsinline=""
+            poster="https://surbee.io/public/landing/img/submit-a-survey.png">
+            <source type="video/mp4" src="https://surbee.io/public/videos/c/submit-a-survey.mp4">
+            <source type="video/webm" src="https://surbee.io/public/videos/c/submit-a-survey.webm"></video> -->
+
+          <iframe src="https://surbee.io/public/videos/c/submit-a-survey.mp4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </li>
+        <li data-aos="slide-up">
           <a href="https://github.com/lap089/MoodleManager">Moodle Manager</a>
           <p class="description">
             This program intends to support my study. I realised that my
@@ -283,19 +289,7 @@
           </p>
           <p class="language">C#, Universal Windows Platform</p>
         </li>
-        <li>
-          <a href="https://github.com/lap089/USurvey">Usurvey</a>
-          <p class="description">
-            An online survey application to help users earn money for
-            cross-platform mobile and web application. The project has two main
-            versions with different purposes. In the first version, it is the
-            cross-platform mobile application that uses React Native framework.
-            Regarding the second one, it is the web application implemented by
-            Angular2 to support companies for creating various types of survey.
-          </p>
-          <p class="language">React Native, AngularJs</p>
-        </li>
-        <li>
+        <li data-aos="slide-up">
           <a href="https://github.com/lap089/EVENeT">EVENeT</a>
           <p class="description">
             A social network application for event management.

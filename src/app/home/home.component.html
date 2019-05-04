@@ -1,7 +1,7 @@
 <div class="container">
-  <h2>List of Articles</h2>
+  <h2>My Reports</h2>
   <ul class="report-pdf-list" *ngIf="articles.length else loading">
-    <li class="animate-zoom report-item" *ngFor="let article of articles; let i = index" (click)="viewArticle(article.pathName)">
+    <li data-aos="slide-left" class="report-item" *ngFor="let article of articles; let i = index" (click)="viewArticle(article.pathName)">
       <h3>{{ article.title }}</h3>
       <fa size="lg" name="folder"></fa> <i>{{article.pathName}}</i>
       <ul class="inline-list">

@@ -5,14 +5,15 @@
 }
 
 .report-pdf-list .report-item:hover {
-  background-color: rgb(173, 168, 214);
+  background-color: rgb(245, 232, 229);
   border-radius: 10px;
   
 }
 
 .container {
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inline-list li{
@@ -23,11 +24,14 @@
 .center {
   display: inline-block;
   text-align: center;
-  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 @media (max-width: 790px) {
   .container {
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
